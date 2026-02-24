@@ -1,0 +1,75 @@
+/*
+  Reset CSS baseado no modelo de Andy Bell
+  Fonte: https://piccalil.li/blog/a-modern-css-reset/
+*/
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove margens padrão */
+* {
+  margin: 0;
+}
+
+/* Tipografia mais legível */
+html {
+  font-size: 100%; /* 16px padrão */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/* Remove sublinhado de links */
+a {
+  text-decoration: none;
+}
+
+/* Melhorias para listas */
+ol, ul {
+  list-style: none;
+}
+
+/* Melhorias para imagens */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Melhorias para botões */
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remoção de estilos padrão para botões */
+button {
+  all: unset;
+}
+
+/* Melhorias para formulários */
+input[type="search"] {
+  outline-offset: -2px;
+}
+
+/* Melhorias para tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Melhorias para elementos visuais */
+:root {
+  color-scheme: light dark;
+  /* Adicione outras variáveis globais aqui, se necessário */
+}
+
+/* Outros ajustes globais */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background-color: #fff;
+  color: #000;
+}

@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <title>Tip Calculator</title>
 </head>
+
 <body>
-    <header>
-        <h1>SPLITTER</h1>
+    <header class="logo">
+        <img src="./assets/images/logo.svg" alt="">
     </header>
     <main class="container">
-        <div class="bill-input">
-            <label for="bill">Bill</label>
-            <input type="number" id="bill" placeholder="0.00">
-        </div>
-        <div class="tip-input">
-            <h2>Select Tip %</h2>
-            <div class="tip-grid">
-                <div class="tip-option">
-                    <input type="radio" id="tip-5" name="tip" value="5">
-                    <label for="tip-5">5%</label>
-                </div>
-                <div class="tip-option">
-                    <input type="radio" id="tip-10" name="tip" value="10">
-                    <label for="tip-10">10%</label>
-                </div>
-                <div class="tip-option">
-                    <input type="radio" id="tip-15" name="tip" value="15">
-                    <label for="tip-15">15%</label>
-                </div>
-                <div class="tip-option">
-                    <input type="radio" id="tip-25" name="tip" value="25">
-                    <label for="tip-25">25%</label>
-                </div>
-                <div class="tip-option">
-                    <input type="radio" id="tip-50" name="tip" value="50">
-                    <label for="tip-50">50%</label>
-                </div>
-                <div class="tip-option">
-                    <input type="number" id="tip-custom" name="tip" placeholder="Custom">
-                    
+        <section>
+            <div class="bill-input">
+                <label for="bill">Bill</label>
+                <input type="number" class="bill-icon" id="bill" placeholder="0.00">
+            </div>
+            <div class="tip-input">
+                <h2>Select Tip %</h2>
+                <div class="tip-grid">
+                    <div class="tip-option">
+                        <input type="radio" id="tip-5" name="tip" value="5">
+                        <label for="tip-5">5%</label>
+                    </div>
+                    <div class="tip-option">
+                        <input type="radio" id="tip-10" name="tip" value="10">
+                        <label for="tip-10">10%</label>
+                    </div>
+                    <div class="tip-option">
+                        <input type="radio" id="tip-15" name="tip" value="15">
+                        <label for="tip-15">15%</label>
+                    </div>
+                    <div class="tip-option">
+                        <input type="radio" id="tip-25" name="tip" value="25">
+                        <label for="tip-25">25%</label>
+                    </div>
+                    <div class="tip-option">
+                        <input type="radio" id="tip-50" name="tip" value="50">
+                        <label for="tip-50">50%</label>
+                    </div>
+                    <div class="tip-option ">
+                        <input type="number" id="tip-custom" name="tip" placeholder="Custom">
+                    </div>
                 </div>
             </div>
-
-        </div>
+            <div class="people-input">
+                <div class="label-wrapper">
+                    <label for="people">Number of People</label>
+                    <span class="error-msg">Can't be zero</span>
+                </div>
+                <input type="number" id="people" placeholder="0">
+            </div>
+        </section>
+        <section>
+            <div class="result">
+                <div class="result-item">
+                    <div class="item">
+                        <h2>Tip Amount</h2>
+                        <p>/ person</p>
+                    </div>
+                    <p class="result-size" id="tip-amount">$0.00</p>
+                </div>
+                <div class="result-item">
+                    <div class="item">
+                        <h2>Total</h2>
+                        <p>/ person</p>
+                    </div>
+                    <p class="result-size" id="total-amount">$0.00</p>
+                </div>
+                <button class="btn" type="button" id="reset">RESET</button>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
