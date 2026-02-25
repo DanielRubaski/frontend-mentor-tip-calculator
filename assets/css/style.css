@@ -43,9 +43,13 @@ main {
 }
 
 .bill-input input:hover,
-.people-input input:hover{
+.people-input input:hover,
+.bill-input input:focus,
+.people-input input:focus{
     outline: 2px solid var(--light-green);
+    border: none;
 }
+
 
 .people-input input{
     background-image: url(../images/icon-person.svg);
@@ -69,6 +73,13 @@ main {
 
 .error-active input {
   border: 2px solid #E17457; 
+}
+
+.error-active input,
+.error-active input:hover,
+.error-active input:focus {
+  border: 2px solid #E17457; /* A cor laranja/vermelha do erro */
+  outline: none;
 }
 
 .bill-input input::placeholder,
@@ -141,7 +152,8 @@ main {
     font-size: 1.5rem;
 }
 
-#tip-custom:hover {
+#tip-custom:hover,
+#tip-custom:focus {
     outline: 2px solid var(--light-green);
 }
 
@@ -187,7 +199,11 @@ main {
     color: var(--light-green);
 }
 
-.result .btn {
+.separador{
+    width: 100%;
+    text-align: center;
+}
+.result .separador .btn {
     margin: auto;
     width:95%;
     height: 50px;
@@ -202,7 +218,5 @@ main {
 .result .btn:hover {
     background-color: var(--grey-200);
     color: var(--dark-green);
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
-
