@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc assets/ts/index.ts",
+    "build": "npxtsc assets/ts/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
